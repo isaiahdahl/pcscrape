@@ -11,6 +11,20 @@ ActiveAdmin.register Song do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
+# actions :index, :show, :new, :create, :update, :edit
+
+  index do
+
+    selectable_column
+    id_column
+    column :title
+    column :artist
+    column :notation
+    column :keyword
+    column :sku
+
+    actions
+  end
 
   permit_params :title, :artist, :keyword, :url, :sku, :notation
 
