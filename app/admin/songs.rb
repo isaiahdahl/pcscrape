@@ -12,6 +12,6 @@ ActiveAdmin.register Song do
 #   permitted
 # end
 
-  permit_params :title, :artist, :keyword, :url
+  permit_params :title, :artist, :keyword, :url, :sku, :notation
 
 end
