@@ -1,5 +1,5 @@
 keyword = "christmas"
-@songs = {
+@christmas_songs = {
     "songscrape":[
         {
             "title":"Rudolph The Red-Nosed Reindeer",
@@ -604,15 +604,3 @@ keyword = "christmas"
     ]
 
 }
-
-@songs[:songscrape].each do |song|
-        scraped_song = {
-            title: song[:title],
-            artist: song[:artist],
-            notation: song[:notation],
-            url: song[:url],
-            sku: song[:sku].to_i,
-            keyword: keyword
-        }
-        Song.create(scraped_song)
-end

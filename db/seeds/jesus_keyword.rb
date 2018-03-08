@@ -1,6 +1,22 @@
 keyword = "jesus"
-@songs = {
+@jesus_songs = {
     "songscrape":[
+        {
+            "title":"Jesus, What A Wonderful Child",
+            "url":"https://www.sheetmusicdirect.us/sheetmusic/song/1000209539/jesus-what-a-wonderful-child",
+            "sku":"1000209539",
+            "artist":"Rollo Dilworth",
+            "artist_url":"https://www.sheetmusicdirect.us/search/contributor/60443/rollo-dilworth",
+            "notation":"Choral Octavo"
+        },
+        {
+            "title":"Jesus, What A Wonderful Child",
+            "url":"https://www.sheetmusicdirect.us/sheetmusic/song/1000209539/jesus-what-a-wonderful-child",
+            "sku":"1000209539",
+            "artist":"Rollo Dilworth",
+            "artist_url":"https://www.sheetmusicdirect.us/search/contributor/60443/rollo-dilworth",
+            "notation":"Choral Octavo"
+        },
         {
             "title":"Jesus, What A Wonderful Child",
             "url":"https://www.sheetmusicdirect.us/sheetmusic/song/1000209539/jesus-what-a-wonderful-child",
@@ -331,15 +347,3 @@ keyword = "jesus"
         }
     ]
 }
-
-@songs[:songscrape].each do |song|
-        scraped_song = {
-            title: song[:title],
-            artist: song[:artist],
-            notation: song[:notation],
-            url: song[:url],
-            sku: song[:sku].to_i,
-            keyword: keyword
-        }
-        Song.create(scraped_song)
-end

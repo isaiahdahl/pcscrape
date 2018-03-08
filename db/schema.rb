@@ -34,9 +34,9 @@ ActiveRecord::Schema.define(version: 20171218204216) do
     t.string "artist"
     t.string "keyword"
     t.string "url"
+    t.integer "sku"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "sku"
     t.string "notation"
   end
 

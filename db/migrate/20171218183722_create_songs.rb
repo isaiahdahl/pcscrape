@@ -5,6 +5,7 @@ class CreateSongs < ActiveRecord::Migration[5.1]
       t.string :artist
       t.string :keyword, null: true
       t.string :url
+      t.integer :sku, unique: true
 
       t.timestamps
     end
